@@ -4,17 +4,16 @@ var date = new Date().getFullYear();
 let launchDate = new Date(`May 25, ${date}`).getTime();
 
 // Setup Timer to tick every 1 second
-let timer = setInterval(tick, 1000);
+let time = setInterval(tick, 1000);
 
 function tick() {
     // Get current time
     let now = new Date().getTime();
     // Get the difference in time to get time left until reaches 0
-    let diff = now - launchDate;
+    let diff = launchDate - now;
 
     // Check if time is above 0
-
-    if (diff >= 0) {
+    if (diff != 0) {
         // Setup Days, hours, seconds and minutes
         // Algorithm to calculate days...
         let days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -37,6 +36,7 @@ function tick() {
         let time = `${days} : ${hours} : ${mins} : ${secs}`;
 
         // Set time on document
-        document.querySelector('.countdown').innerText = time;
+        document.getElementById('countdown').innerText = time;
+        console.log(time)
     }
 }

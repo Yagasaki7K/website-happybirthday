@@ -50,7 +50,7 @@ header {
         color: #fff;
         font-size: 28px;
         font-weight: 900;
-        
+
         span {
             font-weight: 400;
         }
@@ -118,117 +118,135 @@ header {
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: montserrat, sans-serif;
+    font-family: montserrat, sans-serif;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  background-image: url("../assets/background.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
+
 header:after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  background-color: rgba(34, 34, 34, 0.5);
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: rgba(34, 34, 34, 0.5);
 }
+
 header .content {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
+
 header h1 {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 900;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 900;
 }
+
 header h1 span {
-  font-weight: 400;
+    font-weight: 400;
 }
+
 @media screen and (min-width: 480px) {
-  header h1 {
-    font-size: 36px;
-  }
+    header h1 {
+        font-size: 36px;
+    }
 }
+
 @media screen and (min-width: 768px) {
-  header h1 {
-    font-size: 42px;
-  }
+    header h1 {
+        font-size: 42px;
+    }
 }
+
 @media screen and (min-width: 1024px) {
-  header h1 {
-    font-size: 56px;
-  }
+    header h1 {
+        font-size: 56px;
+    }
 }
+
 @media screen and (min-width: 1280px) {
-  header h1 {
-    font-size: 72px;
-  }
+    header h1 {
+        font-size: 72px;
+    }
 }
+
 header h2 {
-  color: #fff;
-  font-size: 42px;
-  margin: 30px 0px;
-}
-@media screen and (min-width: 480px) {
-  header h2 {
-    font-size: 56px;
-  }
-}
-@media screen and (min-width: 768px) {
-  header h2 {
-    font-size: 72px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  header h2 {
-    font-size: 96px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header h2 {
-    font-size: 128px;
-  }
-}
-header .countdown {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 400;
-}
-@media screen and (min-width: 480px) {
-  header .countdown {
+    color: #fff;
     font-size: 42px;
-  }
+    margin: 30px 0px;
 }
+
+@media screen and (min-width: 480px) {
+    header h2 {
+        font-size: 56px;
+    }
+}
+
 @media screen and (min-width: 768px) {
-  header .countdown {
-    font-size: 56px;
-  }
+    header h2 {
+        font-size: 72px;
+    }
 }
+
 @media screen and (min-width: 1024px) {
-  header .countdown {
-    font-size: 72px;
-  }
+    header h2 {
+        font-size: 96px;
+    }
 }
+
 @media screen and (min-width: 1280px) {
-  header .countdown {
-    font-size: 88px;
-  }
+    header h2 {
+        font-size: 128px;
+    }
+}
+
+header .countdown {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 480px) {
+    header .countdown {
+        font-size: 42px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header .countdown {
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header .countdown {
+        font-size: 72px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header .countdown {
+        font-size: 88px;
+    }
 }
